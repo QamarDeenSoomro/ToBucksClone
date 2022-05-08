@@ -25,28 +25,28 @@
   </head>
   <body>
     <div class="container-fluid top_bar">
-        <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-8 col-md-6 gap-2 top_1">
-          <img src="./images/map icon.png" alt="map ico" />
-          <p>London SW1A 1AA, United Kingdom</p>
-        </div>
-        <div class="col-sm-1 col-md-2 col-xl-3"></div>
-        <div class="col-xs-12 col-sm-3 col-md-4 col-xl-3 gap-2 top_2">
-          <button type="button" class="btn btn-dark">Login</button>
-          <button type="button" class="btn btn-dark">Register</button>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8 col-md-6 gap-2 top_1">
+            <img src="./images/map icon.png" alt="map ico" />
+            <p>London SW1A 1AA, United Kingdom</p>
+          </div>
+          <div class="col-sm-1 col-md-2 col-xl-3"></div>
+          <div class="col-xs-12 col-sm-3 col-md-4 col-xl-3 gap-2 top_2">
+            <button type="button" class="btn btn-dark">Login</button>
+            <button type="button" class="btn btn-dark">Register</button>
+          </div>
         </div>
       </div>
     </div>
-    </div>
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-xl-3">
+      <div class="row d-flex align-items-center nav_row">
+        <div class="col-md-4 col-xl-3">
           <img src="/images/logo.png" class="main_logo" alt="logo" />
         </div>
-        <div class="col-xl-3">
-          <nav class="navbar d-flex main_nav">
-            <form class="container-fluid justify-content-start">
+        <div class="nav_div col-md-1 col-xl-4">
+          <nav class="navbar d-flex">
+            <form class="container-fluid justify-content-start gap-3 main_nav">
               <a href="#">Home</a>
               <a href="#">About Us</a>
               <a href="#">Services</a>
@@ -54,16 +54,206 @@
             </form>
           </nav>
         </div>
-        <div class="col-xl-3 d-flex">
-          <p>
-            DOWNLOAD <img src="./images/download.png" alt="download app" /> OUR
-            APP
-          </p>
-          <button type="button" class="btn btn-primary">Primary</button>
+        <div class="col-md-1 col-xl-3 d-flex align-items-center dl_div">
+          <span>
+            DOWNLOAD
+            <img
+              src="./images/download.png"
+              alt="download app"
+              class="align-items-center"
+            />
+            OUR APP</span
+          >
+        </div>
+        <div
+          class="col-md-auto col-xl-2 gap-1 d-flex flex-row align-items-center call_btn"
+        >
+          <button type="button" class="btn btn-primary">
+            <img src="/images/Vector.png" alt="" /><span>123 456 7890</span>
+          </button>
+
+          <!-- Mobile Nav Starts here -->
+          <div class="mobile_nav">
+            <nav class="navbar navbar-light">
+              <div class="container-fluid">
+                <!-- <a class="navbar-brand" href="#">Offcanvas navbar</a> -->
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar"
+                  aria-controls="offcanvasNavbar"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  class="offcanvas offcanvas-end"
+                  tabindex="-1"
+                  id="offcanvasNavbar"
+                  aria-labelledby="offcanvasNavbarLabel"
+                >
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                      Offcanvas
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close text-reset"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"
+                          >Home</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a
+                          class="nav-link dropdown-toggle"
+                          href="#"
+                          id="offcanvasNavbarDropdown"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Dropdown
+                        </a>
+                        <ul
+                          class="dropdown-menu"
+                          aria-labelledby="offcanvasNavbarDropdown"
+                        >
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li>
+                            <hr class="dropdown-divider" />
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input
+                        class="form-control me-2"
+                        type="search"
+                        placeholder="Search"
+                        aria-label="Search"
+                      />
+                      <button class="btn btn-outline-success" type="submit">
+                        Search
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
         </div>
       </div>
-
-      <!-- Main Container Ends Here -->
+      <div class="row home1">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-4">
+          <div class="home1_data">
+            <p>Love you car? Get the best service</p>
+            <p>Save upto <span class="60_p_off">60% off</span></p>
+            <p>Guaranteed on your Car Service</p>
+            <p class="home1_box">
+              Free Pick up & Drop. Same Day Delivery. Free Car Wash
+            </p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-4">
+          <img
+            src="./images/banner img 2.png"
+            alt="mobile banner"
+            class="home1_mobile_img"
+          />
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+          <img
+            src="./images/mechanic-5 1.png"
+            alt="mechanic"
+            class="home1_mechanic_img"
+          />
+        </div>
+        <div class="col-xl-1"></div>
+      </div>
+      <div class="home2">
+        <p class="home2_heading">Nobody else does it like we do.</p>
+        <p class="home_2_desc">Finding the best car service is no hassle.</p>
+        <p class="home_2_desc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+      </div>
+      <div class="row home2grid gap-2">
+        <div class="col-xl-3 home2grid_child">
+          <img src="./images/home2_1.png" class="home2_jpg" alt="Home2_1">
+          <div class="home2_png">
+          <img src="./images/h1_1png.png" alt="home21png">
+          <div class="png_desc_container">
+          <p class="grid_heading">Full Services Wash</p>
+          <p class="grid_descr">Car Wash</p>
+        </div>
+        </div>
+        </div>
+        <div class="col-xl-3 home2grid_child">
+          <img src="./images/home2_2.png" class="home2_jpg" alt="Home2_1">
+          <div class="home2_png">
+            <img src="./images/h2_2png.png" alt="home21png">
+            <div class="png_desc_container">
+            <p class="grid_heading">Engine Repair</p>
+            <p class="grid_descr">Car</p>
+          </div>
+          </div>
+        </div>
+        <div class="col-xl-3 home2grid_child">
+          
+          <img src="./images/home2_3.png" class="home2_jpg" alt="Home2_1">
+          <div class="home2_png">
+            <img src="./images/h2_3png.png" alt="home21png">
+            <div class="png_desc_container">
+            <p class="grid_heading">Tires</p>
+            <p class="grid_descr">Car</p>
+          </div>
+          </div>
+        </div>
+        <div class="col-xl-3 home2grid_child">
+          <img src="./images/home2_4.png" class="home2_jpg" alt="Home2_1">
+          <div class="home2_png">
+            <img src="./images/h2_4png.png" alt="home21png">
+            <div class="png_desc_container">
+            <p class="grid_heading">Transmission</p>
+            <p class="grid_descr">Car</p>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="row home3">
+        <div class="col-xl-6">
+          <img src="./images/foundaded1995.png" alt="car with waves">
+        </div>
+        <div class="col-xl-6">
+          <p>ABOUT COMPANY</p>
+          <h1>Professional Washing and
+            Cleaning of Your Car</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <ul class="about_ul">
+              <li>Over 250,000 cleans</li>
+              <li>VIP & Annual Pass Programs</li>
+              <li>100% Satisfaction</li>
+              <li>Flexible and Cost-Effective</li>
+            </ul>
+          </div>
+      </div>
+      <!-- Main Menu Container Ends Here -->
     </div>
   </body>
 </html>

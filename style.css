@@ -130,11 +130,12 @@ body{
     height: 100%;
 }
 .home2grid_child{
-    width: 24.5% !important;
+    /* width: 24.5% !important; */
     height: 40%;
     padding-left: 0px !important;
     padding-right: 0px !important;
     position: relative;
+    border: solid white;
 }
 .grid_heading{
     font-size: 18px;
@@ -165,10 +166,12 @@ body{
     /* align-items: center !important; */
     left: 5%;
     top: 79%;
-    width: 100%;
+    width: 90%;
+    /* border: #000 solid; */
 }
 .png_desc_container{
     /* border: #000 solid; */
+    width: 90%;
     display: flex;
     flex-direction: column;
     /* align-items: center; */
@@ -180,10 +183,40 @@ body{
   }
   .home3{
       padding-top: 5%;
-  }
+      margin-bottom: 1%;
+      }
   .home3_img{
     width: 100%;
     height: 100%;
+  }
+  .home5_main{
+      padding: 1%;
+      display: flex;
+      flex-direction: row;
+      justify-items: space-between;
+      /* height: 10%; */
+  }
+  .home5_cont{
+      background-color: #146CC4;
+      border: #fff solid;
+      border-radius: 15px;
+      color: white;
+      /* padding: 1%; */
+  }
+  .home5_des{
+    justify-content: center;
+    padding-top: 3%;
+  }
+  .home6_img{
+      height: 100%;
+      /* width: 80%; */
+      position: absolute;
+      top: 5;
+  }
+  .home6{
+      padding-top: 10%;
+      margin-top: 10%;
+      position: relative;
   }
 @media only screen and (max-width: 1200px) {
     /* .nav_div{

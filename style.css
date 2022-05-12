@@ -77,15 +77,36 @@ body {
     width: 0%;
     background-color: gray;
 }
+.home_heading{
+    font-size: 30px;
+    color: #146cc4;
+    font-weight: 400;
+}
 
 .home1 {
     background: #F3F3F3;
-    margin-top: 100%;
+    margin-top: 40px;
     display: flex;
-    height: 10%;
+    position: relative;
+    /* height: 300px; */
     align-items: center;
 }
-
+.home1_box{
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding: 10px;
+    background: #146cc4;
+    margin-bottom: 1%;
+}
+._60p_off {
+    font-size: 40px;
+    line-height: 68px;
+    color: #146cc4;
+    font-weight: 400;
+}
 .home1_data {
     font-size: 20px;
     font-weight: 300;
@@ -98,7 +119,10 @@ body {
 
 .home1_mobile_img {
     /* height: 100%; */
-    width: 100%;
+    width: 30%;
+    position: absolute;
+    top: 0;
+
 }
 
 .home1_mechanic_img {
@@ -134,6 +158,9 @@ body {
     font-style: normal;
     font-weight: 300;
     text-align: center;
+}
+.home2{
+    margin-bottom: 5%;
 }
 
 .home2grid {
@@ -239,22 +266,165 @@ body {
 }
 
 .home6_img {
-    height: 150%;
+    height: 200%;
     /* width: 100%; */
     position: absolute;
-    top: -15%;
+    top: -30%;
 }
 
 .home6 {
     /* padding-top: 10%; */
     /* width: 100%; */
     margin-top: 80px !important;
+    margin-bottom: 10% !important;
     position: relative;
     background: url(./images/home6_background.png) no-repeat center center/cover;
     color: white;
     margin-bottom: 80px;
 }
+.home6_row{
+    /* display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; */
 
+}
+.home_6_geton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* margin: auto; */
+}
+.home_6_child_btn{
+    align-items: center;
+    justify-content: space-around;
+}
+.home_6_child_btn>button{
+    width: 40%;
+}
+.home_7_img{
+    height: 80%;
+}
+.home7{
+    margin-bottom: 5%;
+}
+.home8{
+    background-color: #f3f3f3;
+    border-bottom: 20px solid #146cc4;
+}
+.form_main{
+    display: flex;
+    flex-direction: row;
+    border-bottom: #000 thin;
+}
+.form_title{
+    font-size: 30px;
+    font-weight: 300;
+    color: #146cc4;
+    width: 100%;
+}
+.form_descr{
+    font-size: 14px;
+    color: #6a6a6a;
+    line-height: 20px;
+}
+.form_body{
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: flex-end; */
+}
+.form_input>input, .form_cmnts>input{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    margin-top: 5%;
+    
+}
+.form_input, .form_input{
+    width: 90%;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* align-self: flex-start; */
+    float: left;
+    margin-right: 5%;
+}
+.form_input>input:focus{
+    outline: none;    
+}
+hr{
+    margin: 0 !important;
+    padding: 0;
+}
+.form_cmnts>input:focus{
+    outline: none;
+}
+.form_submit{
+    margin-top: 5%;
+    width: 50%;
+    margin-bottom: 2%;
+}
+.form_submit>button{
+    width: 70%;
+    background-color: #146cc4;
+
+}
+.home_8_img_cont{
+    position: relative;
+    
+}
+.home8_img{
+    position: absolute;
+    top: -10%;
+    height: 130%;
+}
+.home9{
+    margin-top: 5%;
+}
+.home9_title{
+    color: #146cc4;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 47px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.home6_list{
+    display: flex;
+    /* margin-bottom: 5%; */
+}
+.home6_nmbr{
+    height: 90px;
+    width: 90px;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 30px;
+    margin: 3%;
+    
+}
+.home6_list_head{
+    font-size: 25px;
+    line-height: 40px;
+    color: #4e5f76;
+    font-weight: 600;
+}
+.home6_list_subhead{
+    font-size: 20px;
+    line-height: 30px;
+    color: #202020;
+    font-weight: 400;
+}
+.home6_descri{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
 @media only screen and (max-width: 1200px) {
 
     /* .nav_div{
@@ -279,5 +449,24 @@ body {
     .nav_row {
         display: flex;
         justify-content: space-between;
+    }
+    .home6_img{
+        /* top: 100%; */
+        position:initial;
+        height: 100%;
+
+        width: 100%;
+        
+    }
+    .home6_img_div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .home_6_geton{
+     flex-direction: row;    }
+    .home_6_geton>img{
+        width: 50%;
     }
 }
